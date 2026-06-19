@@ -6,6 +6,25 @@ interface Post {
     date:Date
 }
 
+// extend interface for avoid the overwritting 
+interface A {
+    name:string,
+    age:string
+}
+
+interface B extends A {
+    isMember:boolean
+}
+
+
+const user:B = {
+    name:"Hong",
+    age:"12",
+    isMember:true
+}
+
+
+
 
 const post:Post = {
     id:2,
